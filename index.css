@@ -23,6 +23,8 @@
     text-align: center;
     color:white;
     z-index: 1;
+    max-width: 500px;
+    width: 100%;
 }
 .logo{
     max-width: 400px;
@@ -31,24 +33,46 @@
 }
 .email-form{
     display: flex;
-    margin: 10px 0;
-    font-size: 1rem;
-    border-radius: 8px;
-    border: none;
-    width:250px;
-    max-width: 100%;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin-bottom: 20px;
 }
-.email-form button{
+
+.submit-btn{
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color:black;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+    
+}
+
+.submit-btn:hover{
+background-color: rgb(56, 55, 55);
+}
+
+.enter-site-btn{
     padding: 10px 20px;
     background-color: #000;
     color:white;
     border: none;
     border-radius: 8px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3 ease;
+    display: none;
+    transition: transform 0.5 ease;
+    margin-top: 20px;
 }
-.email-form hover{
-    background-color: #333;
+
+.enter-site-btn.show{
+    display: block;
+    transform: translateY(20px);
+
+}
+body{
+    overflow: hidden;
 }
