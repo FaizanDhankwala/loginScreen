@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Locker</title>
-    <link rel="stylesheet" href="./index.css";>
+    <link rel="stylesheet" href="./index.css">
+    
 </head>
 
 <body>
     <audio autoplay loop src="./audio/backgroundmusic.mp3"></audio>
     <video autoplay muted loop class="video-bg">
-        <source src="./videos/videofile.mp4">
+        <source src="./videos/final.mp4">
     </video>
 
-    <div class= "content">
+    <div class="centered-container">
         <img src="./Pictures/logo.png" alt="World Tour Logo" class="logo"/>
 
 
         <form class="email-form">
-            <input type="email" id="email" placeholder="Email" required/>
-
-            <button type="submit" class="submit-btn">Submit</button>
+            <div class="input-wrapper">
+                <input type="email" id="email" placeholder="Email Is Required For Access" required/>
+            </div>
+            
+          
         </form>
+        <button id="enter-site-btn"class="enter-site-btn">Enter Site</button>
 
-        <button id="enter-site"class="enter-site-btn">Enter Site</button>
+
 
     </div>
     <script src="script.js"></script>
